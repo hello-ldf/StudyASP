@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>按钮动画</title>
+    <script type="text/javascript">
+        function mouseOver() {
+            document.pic.src = "../Picture/doge2.jpg"
+        }
+        function mouseOut() {
+            document.pic.src = "../Picture/doge1.jpg"
+        }
+    </script>
+</head>
+<body>
+<a href="https://www.baidu.com/" target="_blank">
+    <img src="../Picture/doge1.jpg" name="pic" border="0" alt="访问百度！" onmouseover="mouseOver()" onmouseout="mouseOut()" />
+</a>
+</body>
+</html>
