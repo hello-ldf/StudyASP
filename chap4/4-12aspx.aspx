@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    这是测试
+    通过测试
     </div>
     </form>
 </body>
