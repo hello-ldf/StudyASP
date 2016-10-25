@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<books>
+  <Book ID="100">
+    <BookName>ASP.NET高级编程</BookName>
+    <Price>156</Price>
+  </Book>
+  <Book ID="101">
+    <BookName>精通LINQ数据访问</BookName>
+    <Price>39.8</Price>
+  </Book>
+  <Book ID="102">
+    <BookName>ASP.NET 3.5教程</BookName>
+    <Price>41.6</Price>
+  </Book>
+</books>
