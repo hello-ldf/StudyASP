@@ -10,13 +10,15 @@
     <form id="form1" runat="server">
     <div>
         <asp:LinqDataSource ID="LinqDataSource1" runat="server" 
-            ContextTypeName="MyPetShopDataContext" EntityTypeName="" TableName="Category">
+            ContextTypeName="MyPetShopDataContext" EntityTypeName="" 
+            TableName="Category" EnableDelete="True" EnableInsert="True" 
+            EnableUpdate="True">
         </asp:LinqDataSource>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
             AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="CategoryId" 
             DataSourceID="LinqDataSource1">
             <Columns>
-                <asp:CommandField ShowSelectButton="True" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True"/>
                 <asp:BoundField DataField="CategoryId" HeaderText="CategoryId" 
                     InsertVisible="False" ReadOnly="True" SortExpression="CategoryId" />
                 <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
