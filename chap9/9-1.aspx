@@ -1,0 +1,19 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="9-1.aspx.cs" Inherits="chap9_9_1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Login ID="Login1" runat="server" 
+        CreateUserText="我还没注册！" CreateUserUrl="~/chap9/9-2.aspx"
+        PasswordRecoveryText="忘记密码了？" PasswordRecoveryUrl="~/chap9/9-1.aspx">
+        </asp:Login>
+    </div>
+    </form>
+</body>
+</html>
