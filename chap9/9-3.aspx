@@ -17,7 +17,7 @@
                 <asp:RoleGroup Roles="Member">
                     <ContentTemplate>
                         Welcome:<asp:LoginName ID="LoginName2" runat="server" />
-                        &nbsp;<asp:LinkButton ID="LinkButton3" runat="server">密码修改</asp:LinkButton>
+                        &nbsp;<asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/chap9/9-4.aspx">密码修改</asp:LinkButton>
                         &nbsp;<asp:LinkButton ID="LinkButton4" runat="server">购物记录</asp:LinkButton>
                         &nbsp;<asp:LoginStatus ID="LoginStatus3" runat="server" />
                     </ContentTemplate>
@@ -25,7 +25,7 @@
                 <asp:RoleGroup Roles="Admin">
                     <ContentTemplate>
                         Welcome:<asp:LoginName ID="LoginName1" runat="server" />&nbsp
-                        <asp:LinkButton ID="LinkButton1" runat="server">密码修改</asp:LinkButton>&nbsp
+                        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/chap9/9-4.aspx">密码修改</asp:LinkButton>&nbsp
                         <asp:LinkButton ID="LinkButton2" runat="server">系统管理</asp:LinkButton>&nbsp
                         <asp:LoginStatus ID="LoginStatus2" runat="server" />
                     </ContentTemplate>

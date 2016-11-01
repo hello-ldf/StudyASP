@@ -11,7 +11,7 @@
     <div>
         <asp:Login ID="Login1" runat="server" DestinationPageUrl="~/chap9/9-3.aspx"
         CreateUserText="我还没注册！" CreateUserUrl="~/chap9/9-2.aspx"
-        PasswordRecoveryText="忘记密码了？" PasswordRecoveryUrl="~/chap9/9-1.aspx">
+        PasswordRecoveryText="忘记密码了？" PasswordRecoveryUrl="~/chap9/9-4.aspx">
         </asp:Login>
     </div>
     </form>
