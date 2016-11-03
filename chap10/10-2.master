@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="10-2.master.cs" Inherits="chap10_10_2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>模板页</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table cellpadding="3" cellspacing="1" width="100%" >
+    <tr><td>也顶部包含网站log、搜索入口、登录入口、站点导航栏等信息</td></tr>
+    <tr><td><div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div></td></tr>
+    <tr><td>页底部版权等信息</td></tr>
+    </table>
+
+    
+    </form>
+</body>
+</html>
