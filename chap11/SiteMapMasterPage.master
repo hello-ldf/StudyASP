@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMapMasterPage.master.cs" Inherits="chap11_SiteMapMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table cellpadding="3" cellspacing="1" width="100%">
+        <tr><td colspan="2">站点导航栏测试</td></tr>
+        <tr><td colspan="2">
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+            </asp:SiteMapPath>
+        </td></tr>
+        <tr>
+            <td>
+                <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+                </asp:TreeView>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </td>
+            <td><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr><td colspan="2">页面底部版权等信息</td></tr>
+    </table>
+        
+    </div>
+    </form>
+</body>
+</html>

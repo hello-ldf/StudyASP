@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/chap11/Products.aspx" title="Products"  description="产品">
+    <siteMapNode url="~/chap11/Hardware.aspx" title="Hardware"  description="硬件" />
+    <siteMapNode url="~/chap11/SoftWare.aspx" title="SoftWare"  description="软件" />
+  </siteMapNode>
+</siteMap>
